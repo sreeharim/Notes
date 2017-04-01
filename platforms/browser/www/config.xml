@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.m.sreehari" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Cards</name>
+    <name>Notes</name>
     <description>
-        A blank PhoneGap app.
+        Note it down!!!
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+        Sreehari M
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="orientation" value="portrait" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
 </widget>
