@@ -46,7 +46,9 @@ app.controller("myController",function($scope,$log,DateService){
                              console.log(record.value.header);
                               $scope.classSelector = $scope.count%5;
                               $scope.times[$scope.count]=record.value.header;
+                              record.value.id = $scope.count;
                               $scope.cards.unshift(new Card($scope.count,record.value.content));
+                              $scope.store.save({key:record.key,value:record.value})
                               $scope.count++;
                         })
                         
@@ -100,6 +102,7 @@ app.controller("myController",function($scope,$log,DateService){
                             }
                               
                         $scope.store.each(function(record, index) {
+                                  console.log('id : '+id+' record id : '+record.value.id);
                                   if(id == record.value.id)
                                      $scope.store.remove(record.key);
                                                            
@@ -110,9 +113,14 @@ app.controller("myController",function($scope,$log,DateService){
                     $scope.deleteAll = function(){
                         $scope.store.keys( function(key) {
                             console.log('Removed '+key);
-                            $scope.store.remove(key);})
+                            $scope.store.remove(key);});
+                         $scope.store.each(function(record, index) {
+                                  
+                                     $scope.store.remove(record.key);
+                                                           
+                        })
                     }
-                    //$scope.deleteAll();
+                   // $scope.deleteAll();
                     $scope.init();
                     })
     .directive("myCard",function(){
