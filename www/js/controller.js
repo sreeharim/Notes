@@ -7,7 +7,7 @@ app.controller("myController",function($scope,$log,DateService){
                     $scope.updateMode = false;
                     $scope.currUpdateId = '';
                     $scope.currentText ='';
-                    $scope.store = Lawnchair({adaptor:'dom',name: 'db' }, function(e){
+                    $scope.store = Lawnchair({adapter: 'dom',name: 'db' }, function(e){
                             console.log('Storage open');
                             });
                       $scope.showEdit = function(){
