@@ -1,0 +1,88 @@
+
+ .center-div {
+	position: relative;
+	top: 10%;
+	padding:5%;
+}
+html {
+  height: 100%;
+}
+body {
+	padding:5px;	
+  	height: 100%;
+}
+.float-button {
+
+background-color:#636c72;
+opacity: 0.9;
+color: white;
+border-radius: 50%;
+/*border-radius:15% 0 0 0;*/
+width: 60px;
+height: 60px;
+padding: 25px;
+font-size: 50px;
+position: fixed;
+bottom: 5%; /* Adjust height */
+right: 5%; /* Adjust position */
+z-index: 1000;
+}
+
+.float-button .height_fix {
+  margin-top: 100%;
+  border: 1px solid red;
+}
+
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  color: white;
+}
+
+.customCard{
+	margin-left: 5px;
+	margin-right:5px;
+}
+.customTextArea{
+
+	height:80%;
+}
+#editArea{
+	height:100%; 
+	width: 100%;
+	padding:10px;
+}
+#success{
+width:25%;
+margin-right: 5%;
+height:100%;
+}
+#cancel{
+width:25%;
+height:100%;
+}
+#buttons{
+ height:10%;	
+ position:relative;
+ left: 20%;
+}
+/*.glyphicon-trash:before {
+  content: "\e020";
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
