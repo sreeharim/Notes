@@ -23,6 +23,9 @@ app.factory("DateService",function($log){
     			hours=hours%12;
     			mid='PM';
     		}
+    		else if(hours==12)
+    			 mid='PM';
+    		
 			return month+' '+day+','+year+' '+hours+':'+minutes+':'+sec+' '+mid;
 		}
 	}
